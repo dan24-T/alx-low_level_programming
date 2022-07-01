@@ -1,8 +1,8 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(void)
 {
-	srand(time(NULL));
 	int n=rand();
 	if (0<n)
 	{
