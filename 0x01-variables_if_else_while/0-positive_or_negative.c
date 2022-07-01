@@ -2,12 +2,12 @@
 
 int main(void)
 {
-	int n;
+	int n=rand();
 	if (0<n)
 	{
 		printf("%d: is positive\n",n);
 	}
-	else if (0==n)
+	else if (0=n)
 	{
 		printf("%d: is zero\n",n);
 	}
