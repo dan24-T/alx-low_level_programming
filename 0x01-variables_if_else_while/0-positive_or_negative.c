@@ -2,6 +2,7 @@
 
 int main(void)
 {
+	srand(time(NULL));
 	int n=rand();
 	if (0<n)
 	{
