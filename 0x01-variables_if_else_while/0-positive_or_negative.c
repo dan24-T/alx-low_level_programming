@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 /**
 * main - Entry point
@@ -8,8 +9,8 @@
 */
 int main(void)
 {
-srand(time(NULL));
-int n = rand();
+srand(time(0));
+int n = rand() - RAND_MAX / 2;
 if (n > 0)
 {
 printf("%d is positive\n", n);
