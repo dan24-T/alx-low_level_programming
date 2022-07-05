@@ -2,9 +2,9 @@
 #include <ctype.h>
 #include "main.h"
 /**
-* print_alphabet - entry point
+*  _islower - entry point
 * Description: function print_alphabet(void)
-* Return: Always 0 (Success)
+* Return: Always c (Success)
 */
 int _islower(int c)
 {
