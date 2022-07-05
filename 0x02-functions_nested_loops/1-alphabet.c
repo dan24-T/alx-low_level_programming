@@ -1,10 +1,10 @@
 #include <stdio.h>
-#include "main.c"
 /**
 * main - check the code
 *
 * Return: Always 0.
 */
+#include "main.h"
 void print_alphabet(void)
 {
 char i;
