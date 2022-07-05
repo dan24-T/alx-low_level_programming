@@ -3,7 +3,7 @@
 /**
 * main - check the code
 *
-* Description: 'the program's description'
+* Description: 'function print_alphabet'
 *
 * Return: Always 0.
 */
