@@ -3,7 +3,7 @@
 /**
 * main - check the code
 *
-* function print_alphabet()
+* print_alphabet()
 *
 * Return: Always 0.
 */
