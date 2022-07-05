@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* main - print_alphabet
+* print_alphabet - entry point
 * Description: function print_alphabet(void)
 * Return: Always 0 (Success)
 */
