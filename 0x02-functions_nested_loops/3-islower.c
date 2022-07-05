@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <ctype.h>
 #include "main.h"
 /**
 * print_alphabet - entry point
@@ -9,10 +10,10 @@ int _islower(int c)
 {
 if (islower(c))
 {
-putchar('0');
+putchar('1');
 }
 else
 {
-putchar('1');
+putchar('0');
 }
 }
