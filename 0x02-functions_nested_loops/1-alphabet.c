@@ -2,7 +2,7 @@
 #include "main.h"
 /**
 * main - Entry point
-* Description: 'function print_alphabet'
+* Description: 'print_alphabet(void)'
 * Return: Always 0 (Success)
 */
 void print_alphabet(void)
