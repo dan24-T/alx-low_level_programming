@@ -16,4 +16,5 @@ else
 {
 putchar('0');
 }
+return (c);
 }
