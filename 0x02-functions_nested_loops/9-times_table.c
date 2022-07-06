@@ -10,6 +10,6 @@ for(j=0;j<=9;j++)
 x = i*j;
 printf("%d, ", x);
 }
-putchar('\n);
+putchar('\n');
 }
 }
