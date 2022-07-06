@@ -2,7 +2,7 @@
 #include <ctype.h>
 #include "main.h"
 /**
-*  _islower - entry point
+*  _islower - writes the character c to stdout
 * Description: function print_alphabet(void)
 * Return: Always (c) (Success)
 */
