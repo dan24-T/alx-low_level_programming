@@ -12,5 +12,5 @@ int last_digit, x;
 last_digit = i % 10;
 x = abs(last_digit);
 printf("%d", x);
-return x;
+return (x);
 }
