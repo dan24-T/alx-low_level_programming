@@ -1,6 +1,7 @@
 #ifndef MAIN_H_
 #define MAIN_H_
 
+int _abs(int);
 int _isalpha(int c);
 int _islower(int c);
 int _putchar(char c);
