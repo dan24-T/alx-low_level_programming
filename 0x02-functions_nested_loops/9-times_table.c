@@ -11,7 +11,14 @@ for (j = 0; j <= 9; j++)
 x = i * j;
 if (j < 9)
 {
+if (j == 0)
+{
+printf("%d, ", x);
+}
+else
+{
 printf("%2d, ", x);
+}
 }
 else
 {
