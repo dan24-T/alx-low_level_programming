@@ -1,6 +1,11 @@
 #include <stdio.h>
 #include "main.h"
-
+/**
+*  times_table - entry point
+* Description: function void times_table(void);
+* @c: The character to print
+* Return: Always (c) (Success)
+*/
 void times_table(void)
 {
 int i, j, x;
