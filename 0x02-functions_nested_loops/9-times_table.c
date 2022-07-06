@@ -3,8 +3,7 @@
 /**
 *  times_table - entry point
 * Description: function void times_table(void);
-* @c: The character to print
-* Return: Always (c) (Success)
+* Return: Always (0) (Success)
 */
 void times_table(void)
 {
