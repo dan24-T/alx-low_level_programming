@@ -4,6 +4,7 @@
 /**
 *  _islower - writes the character c to stdout
 * Description: function print_alphabet(void)
+* @c: The character to print
 * Return: Always (c) (Success)
 */
 int _islower(int c)
