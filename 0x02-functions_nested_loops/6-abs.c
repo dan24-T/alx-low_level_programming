@@ -3,13 +3,12 @@
 #include "main.h"
 /**
 *_abs - entry point
-*
+* Description: function print_alphabet(void)
+* @i: The character to print
+* Return: Always (i) (Success)
 */
 int _abs(int i)
 {
-if (abs(i))
-i =  1;
-else
-i = 0;
+i = abs(i);
 return (i);
 }
