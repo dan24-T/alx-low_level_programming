@@ -4,6 +4,7 @@
 /**
 *  _isalpha - entry point
 * Description: function print_alphabet(void)
+* @c: The character to print
 * Return: Always (c) (Success)
 */
 int _isalpha(int c)
