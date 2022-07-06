@@ -4,9 +4,8 @@
 *_abs - entry point
 *
 */
-int _abs(int)
+int _abs(int i)
 {
-int i;
 if (abs(i))
 i =  1;
 else
