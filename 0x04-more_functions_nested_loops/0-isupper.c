@@ -14,5 +14,5 @@ if (isupper(c))
 {
 x = 1;
 }
-return (x); 
+return (x);
 }
