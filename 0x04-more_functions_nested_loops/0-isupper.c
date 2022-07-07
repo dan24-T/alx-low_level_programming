@@ -6,8 +6,9 @@
  */
 int _isupper(int c)
 {
+int x;
 x = 0;
-if (isuper(c))
+if (isupper(c))
 {
 x = 1;
 }
