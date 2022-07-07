@@ -6,12 +6,10 @@
  */
 int _isupper(int c)
 {
+x = 0;
 if (isuper(c))
 {
-return (1);
+x = 1;
 }
-else
-{
-return (0);
-}  
+return (x);  
 }
