@@ -11,5 +11,5 @@ if (isuper(c))
 {
 x = 1;
 }
-return (x);  
+return (x); 
 }
