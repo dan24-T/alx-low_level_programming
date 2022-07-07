@@ -3,10 +3,13 @@
 #include "main.h"
 /**
  * mul - A function that checks for uppercase character.
- * @c: An input character
- * Return: 1 if c is uppercase or 0 otherwise
+ * @a: An input character
+ * @b: An input character
+ * Return: x
  */
 int mul(int a, int b)
 {
-return (a * b);
+int x;
+x = a * b;
+return (x);
 }
