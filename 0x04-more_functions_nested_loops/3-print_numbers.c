@@ -1,14 +1,15 @@
-#include "main"
+#include "main.h"
+
 /**
- * print_numbers - A function that checks for uppercase character.
- * @i: An input character
- * Return: 1 if i is uppercase or 0 otherwise
+ * print_numbers - a function that prints the numbers, from 0 to 9,
+ * followed by a new line.
+ * Return: Always 0
  */
 void print_numbers(void)
 {
-for (i = '0'; i <= '9'; i++)
-{
-putchar(i);
-}
-putchar('\n);
+	int i = '0';
+
+	for (; i <= '9'; i++)
+		_putchar(i);
+	_putchar('\n');
 }
