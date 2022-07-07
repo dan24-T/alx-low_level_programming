@@ -6,7 +6,7 @@
  */
 int _isupper(int c)
 {
-if (issuper(c)
+if (issuper(c))
 {
 return (1);
 }
