@@ -1,41 +1,36 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
-/**
- * alloc_grid - nested loop to make grid
- * @width: width input
- * @height: height input
- * Return: pointer to 2 dim. array
+/*
+ * File: 3-array_range.c
+ * Auth: Brennan D Baraban
  */
-int **alloc_grid(int width, int height)
+
+#include "main.h"
+#include <stdlib.h>
+
+/**
+ * array_range - Creates an array of integers ordered
+ *               from min to max, inclusive.
+ * @min: The first value of the array.
+ * @max: The last value of the array.
+ *
+ * Return: If min > max or the function fails - NULL.
+ *         Otherwise - a pointer to the newly created array.
+ */
+int *array_range(int min, int max)
 {
-	int **iarray;
-	int i, n;
+	int *array, index, size;
 
-	if (width <= 0 || height <= 0)
+	if (min > max)
 		return (NULL);
 
-	iarray = malloc(sizeof(int) * height);
+	size = max - min + 1;
 
-	if (iarray == NULL)
-	{
-		free(iarray);
+	array = malloc(sizeof(int) * size);
+
+	if (array == NULL)
 		return (NULL);
-	}
 
-	for (i = 0; i < height; i++)
-	{
-		iarray[i] = malloc(sizeof(int) * width);
-		if (iarray == NULL)
-		{
-			free(iarray);
-			return (NULL);
-		}
+	for (index = 0; index < size; index++)
+		array[index] = min++;
 
-		for (n = 0; n < width; n++)
-		{
-			iarray[i][n] = 0;
-		}
-	}
-	return (iarray);
+	return (array);
 }
