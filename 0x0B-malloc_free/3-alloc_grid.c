@@ -1,5 +1,5 @@
 /*
- * File: 3-array_range.c
+ * File: 3-alloc_grid.c
  * Auth: Brennan D Baraban
  */
 
@@ -7,30 +7,46 @@
 #include <stdlib.h>
 
 /**
- * array_range - Creates an array of integers ordered
- *               from min to max, inclusive.
- * @min: The first value of the array.
- * @max: The last value of the array.
+ * alloc_grid - Returns a pointer to a 2-dimensional array of
+ *               integers with each element initalized to 0.
+ * @width: The width of the 2-dimensional array.
+ * @height: The height of the 2-dimensional array.
  *
- * Return: If min > max or the function fails - NULL.
- *         Otherwise - a pointer to the newly created array.
+ * Return: If width <= 0, height <= 0, or the function fails - NULL.
+ *         Otherwise - a pointer to the 2-dimensional array of integers.
  */
-int *array_range(int min, int max)
+int **alloc_grid(int width, int height)
 {
-	int *array, index, size;
+	int **twoD;
+	int hgt_index, wid_index;
 
-	if (min > max)
+	if (width <= 0 || height <= 0)
 		return (NULL);
 
-	size = max - min + 1;
+	twoD = malloc(sizeof(int *) * height);
 
-	array = malloc(sizeof(int) * size);
-
-	if (array == NULL)
+	if (twoD == NULL)
 		return (NULL);
 
-	for (index = 0; index < size; index++)
-		array[index] = min++;
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	{
+		twoD[hgt_index] = malloc(sizeof(int) * width);
 
-	return (array);
+		if (twoD[hgt_index] == NULL)
+		{
+			for (; hgt_index >= 0; hgt_index--)
+				free(twoD[hgt_index]);
+
+			free(twoD);
+			return (NULL);
+		}
+	}
+
+	for (hgt_index = 0; hgt_index < height; hgt_index++)
+	{
+		for (wid_index = 0; wid_index < width; wid_index++)
+			twoD[hgt_index][wid_index] = 0;
+	}
+
+	return (twoD);
 }
